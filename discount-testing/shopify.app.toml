@@ -1,6 +1,6 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-name = "discount-testing"
+name = "Product discount Levis"
 client_id = "79ddcf21f80a32a2cb0c4e715bcd5583"
 application_url = "https://shopify.dev/apps/default-app-home"
 embedded = true
