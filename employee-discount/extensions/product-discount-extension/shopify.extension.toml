@@ -1,8 +1,8 @@
 api_version = "2023-10"
 
 [[extensions]]
-handle = "product-discount-extension"
-name = "Levis-product-discount"
+handle = "milton-discount-extension"
+name = "Milton-product-discount"
 description = "t:description"
 type = "function"
 
