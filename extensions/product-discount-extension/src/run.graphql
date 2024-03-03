@@ -2,6 +2,9 @@ query RunInput {
   cart {
     buyerIdentity {
       email
+      customer {
+        hasAnyTag(tags:["team-uspl"])
+      }
     }
     lines {
       cost {

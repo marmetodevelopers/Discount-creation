@@ -16,8 +16,9 @@ const EMPTY_DISCOUNT: FunctionRunResult = {
 let DISCOUNT_AMOUNT = (40/100); /* 10% discount = (10/100) */
 export function run(input: RunInput): FunctionRunResult {
   let fixedDiscountToGive=0;
-  const customerIdentity=input.cart.buyerIdentity?.email;
-  if(!customerIdentity?.includes("hamiltonindia.in")) return EMPTY_DISCOUNT;
+  const customerIdentityEmail=input.cart.buyerIdentity?.email;
+  const customerIdentityTag=input.cart.buyerIdentity?.customer?.hasAnyTag || false ;
+  if(!customerIdentityTag) return EMPTY_DISCOUNT;
   const targets: Target[] = input.cart.lines
   .filter(line=>{
     let itemCompareAtAmountPerQuantity = line.cost.compareAtAmountPerQuantity?.amount;
