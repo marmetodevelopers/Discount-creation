@@ -1,8 +1,8 @@
 api_version = "2023-10"
 
 [[extensions]]
-handle = "milton-discount-extension"
-name = "Milton-product-discount"
+handle = "wrogn-discount-extension"
+name = "Wrogn Employee Discount"
 description = "t:description"
 type = "function"
 
